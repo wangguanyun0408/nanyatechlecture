@@ -3,88 +3,153 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>南亞科 (2408) 財報與營運分析</title>
+    <title>南亞科 (2408) 核心定位與財報營運深度分析</title>
     <!-- 引入 Tailwind CSS 進行快速排版 -->
     <script src="https://cdn.tailwindcss.com"></script>
     <!-- 引入 Chart.js 繪製圖表 -->
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 </head>
-<body class="bg-gray-50 text-gray-800 font-sans leading-relaxed">
+<body class="bg-slate-50 text-slate-800 font-sans leading-relaxed">
 
-    <!-- 頂部標題區 -->
-    <header class="bg-blue-800 text-white py-12 text-center shadow-md">
-        <h1 class="text-4xl font-extrabold mb-2">南亞科技 (2408) 財報解析</h1>
-        <p class="text-lg text-blue-200">最新季度：2026 Q1 | DRAM 產業營運指標追蹤</p>
+    <!-- 頂部導航 / 標頭區 -->
+    <header class="bg-gradient-to-r from-blue-900 to-indigo-950 text-white py-16 text-center shadow-lg relative overflow-hidden">
+        <div class="absolute inset-0 bg-grid-white/[0.05] bg-[size:20px_20px]"></div>
+        <div class="relative max-w-5xl mx-auto px-6">
+            <span class="bg-blue-500/20 text-blue-300 text-xs font-semibold tracking-wider uppercase px-3 py-1 rounded-full border border-blue-500/30">
+                台股半導體指標股
+            </span>
+            <h1 class="text-4xl md:text-5xl font-extrabold mt-4 mb-3 tracking-tight">南亞科技 (2408) 營運與財報解析</h1>
+            <p class="text-lg text-slate-300 max-w-2xl mx-auto font-light">
+                核心業務定位、全球 DRAM 產業布局與 2026 Q1 最新季度財務指標追蹤
+            </p>
+        </div>
     </header>
 
-    <main class="max-w-5xl mx-auto py-10 px-6">
+    <main class="max-w-5xl mx-auto py-12 px-6 space-y-12">
         
-        <!-- 公司簡介 -->
-        <section class="bg-white rounded-xl shadow-sm p-8 mb-8 border border-gray-100">
-            <h2 class="text-2xl font-bold text-blue-800 mb-4 border-b pb-2">公司簡介</h2>
-            <p class="mb-4">隸屬台塑集團的南亞科技，是台灣最具代表性的 DRAM（動態隨機存取記憶體）製造廠。公司近期受惠於 DRAM 平均售價大幅回升以及客製化 AI UWIO 記憶體的出貨，營運迎來強勁的成長。</p>
-            <ul class="list-disc pl-6 space-y-2 text-gray-700">
-                <li><strong>最新營運：</strong> 2026 年 Q1 單季 EPS 達 8.41 元，營收 490.87 億元（季增 63.1%）。</li>
-                <li><strong>未來展望：</strong> 第三代、第四代 10 奈米級製程（1C/1D）及 EUV 開發按計畫進行，泰山新廠預計 2027 年 Q1 裝機。</li>
-                <li><strong>資本結構：</strong> 甫完成 787.2 億元私募案，由四大客戶認購，穩固長期合作關係。</li>
-            </ul>
+        <!-- 新增區塊一：公司概述與產業地位 -->
+        <section class="bg-white rounded-2xl shadow-sm p-8 md:p-10 border border-slate-100 transition-all hover:shadow-md">
+            <div class="flex items-center space-x-3 mb-6">
+                <div class="w-2 h-8 bg-blue-700 rounded-full"></div>
+                <h2 class="text-2xl font-bold text-slate-900">公司核心概述與台股地位</h2>
+            </div>
+            
+            <p class="text-slate-600 mb-6 text-base leading-relaxed">
+                隸屬於<strong class="text-slate-900 font-semibold">台塑集團</strong>的南亞科技（Nanya Technology），是台灣最具代表性的 DRAM（動態隨機存取記憶體）核心製造大廠，更是台灣唯一具備自主研發製程技術能力的記憶體 IDM（整合元件製造）大廠。
+            </p>
+            
+            <div class="grid md:grid-cols-2 gap-6 mt-6">
+                <div class="border border-slate-100 bg-slate-50/50 p-6 rounded-xl">
+                    <h3 class="font-bold text-lg text-blue-900 mb-2">全球與台股市場地位</h3>
+                    <ul class="list-disc pl-5 space-y-2 text-sm text-slate-600">
+                        <li><strong class="text-slate-800">全球第四大 DRAM 廠：</strong>次於三星、SK海力士與美光，在利基型與消費性記憶體市場擁有極高的話語權。</li>
+                        <li><strong class="text-slate-800">台塑集團科技旗艦：</strong>背靠集團雄厚的資金與管理綜效，具備極強的抗週期風險能力。</li>
+                        <li><strong class="text-slate-800">台股市值關鍵權值股：</strong>作為記憶體產業的景氣風向球，其營運表現直接影響半導體組群及電子股的整體氣勢。</li>
+                    </ul>
+                </div>
+                <div class="border border-slate-100 bg-slate-50/50 p-6 rounded-xl">
+                    <h3 class="font-bold text-lg text-blue-900 mb-2">我們處在什麼領域？在做什麼？</h3>
+                    <ul class="list-disc pl-5 space-y-2 text-sm text-slate-600">
+                        <li><strong class="text-slate-800">核心業務：</strong>專注於研發、設計、製造及銷售高品質的動態隨機存取記憶體（DRAM）晶片。</li>
+                        <li><strong class="text-slate-800">應用場景：</strong>產品廣泛應用於智慧型手機、伺服器、數據中心、個人電腦、車用電子以及網通消費性電子產品。</li>
+                        <li><strong class="text-slate-800">新藍海布局：</strong>積極進軍 AI 記憶體市場，受惠於客製化 AI UWIO 記憶體出貨，成功切入高階邊緣運算供應鏈。</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- 新增區塊二：技術布局與未來展望 -->
+        <section class="bg-white rounded-2xl shadow-sm p-8 md:p-10 border border-slate-100 transition-all hover:shadow-md">
+            <div class="flex items-center space-x-3 mb-6">
+                <div class="w-2 h-8 bg-blue-700 rounded-full"></div>
+                <h2 class="text-2xl font-bold text-slate-900">核心技術布局與轉型營運指標</h2>
+            </div>
+            <div class="grid md:grid-cols-3 gap-6">
+                <div class="p-5 border border-slate-100 rounded-xl relative overflow-hidden bg-gradient-to-b from-white to-slate-50/30">
+                    <div class="text-xs font-bold text-blue-600 uppercase tracking-wide mb-1">最新營運成果</div>
+                    <div class="text-3xl font-black text-slate-900 my-2">8.41 元</div>
+                    <p class="text-xs text-slate-500">2026 年 Q1 單季 EPS 達 8.41 元，營收達 490.87 億元（季增 63.1%），營運迎來強勁成長。</p>
+                </div>
+                <div class="p-5 border border-slate-100 rounded-xl relative overflow-hidden bg-gradient-to-b from-white to-slate-50/30">
+                    <div class="text-xs font-bold text-indigo-600 uppercase tracking-wide mb-1">先進製程進度</div>
+                    <div class="text-3xl font-black text-slate-900 my-2">1C / 1D</div>
+                    <p class="text-xs text-slate-500">第三代、第四代 10 奈米級製程及 EUV（極紫外光）自主開發按計畫進行，泰山新廠預計 2027 年 Q1 裝機。</p>
+                </div>
+                <div class="p-5 border border-slate-100 rounded-xl relative overflow-hidden bg-gradient-to-b from-white to-slate-50/30">
+                    <div class="text-xs font-bold text-emerald-600 uppercase tracking-wide mb-1">資本結構與私募</div>
+                    <div class="text-3xl font-black text-slate-900 my-2">787.2 億</div>
+                    <p class="text-xs text-slate-500">甫完成 787.2 億元私募案，由四大核心客戶全數認購，穩固長期供貨策略聯盟合作關係。</p>
+                </div>
+            </div>
         </section>
 
         <!-- 三大報表介紹 -->
-        <section class="bg-white rounded-xl shadow-sm p-8 mb-8 border border-gray-100">
-            <h2 class="text-2xl font-bold text-blue-800 mb-4 border-b pb-2">三大報表重點解析</h2>
+        <section class="bg-white rounded-2xl shadow-sm p-8 md:p-10 border border-slate-100 transition-all hover:shadow-md">
+            <div class="flex items-center space-x-3 mb-6">
+                <div class="w-2 h-8 bg-blue-700 rounded-full"></div>
+                <h2 class="text-2xl font-bold text-slate-900">三大報表重點解析</h2>
+            </div>
             <div class="grid md:grid-cols-3 gap-6 mt-6">
-                <div class="bg-blue-50 p-5 rounded-lg">
-                    <h3 class="font-bold text-lg mb-2 text-blue-900">綜合損益表</h3>
-                    <p class="text-sm">獲利能力出現極端的 V 型反轉。2025 年上半年深陷虧損，但 2026 年 Q1 憑藉報價季增逾 70%，單季狂賺 260.58 億元。</p>
+                <div class="bg-blue-50/50 p-6 rounded-xl border border-blue-100/50">
+                    <h3 class="font-bold text-lg mb-2 text-blue-950">綜合損益表</h3>
+                    <p class="text-sm text-slate-600 leading-relaxed">
+                        獲利能力出現極端的 V 型反轉。2025 年上半年深陷虧損週期，但 2026 年 Q1 憑藉 DRAM 平均零售與合約報價季增逾 70%，單季狂賺 260.58 億元。
+                    </p>
                 </div>
-                <div class="bg-blue-50 p-5 rounded-lg">
-                    <h3 class="font-bold text-lg mb-2 text-blue-900">資產負債表</h3>
-                    <p class="text-sm">財務體質強健。2026 年第一季末每股淨值攀升至 62.25 元。787 億元私募資金入注後，有效充實資本並壓低負債比。</p>
+                <div class="bg-indigo-50/50 p-6 rounded-xl border border-indigo-100/50">
+                    <h3 class="font-bold text-lg mb-2 text-indigo-950">資產負債表</h3>
+                    <p class="text-sm text-slate-600 leading-relaxed">
+                        財務體體質強健。2026 年第一季末每股淨值大幅攀升至 62.25 元。在 787 億元私募資金全面注入後，有效充實營運資本並壓低整體負債比率。
+                    </p>
                 </div>
-                <div class="bg-blue-50 p-5 rounded-lg">
-                    <h3 class="font-bold text-lg mb-2 text-blue-900">現金流量表</h3>
-                    <p class="text-sm">投資活動現金持續大額流出（佈局 EUV 與新廠），但當前營業淨現金流極端強勁，足以支撐擴充計畫，不致帶來流動性風險。</p>
+                <div class="bg-emerald-50/50 p-6 rounded-xl border border-emerald-100/50">
+                    <h3 class="font-bold text-lg mb-2 text-emerald-950">現金流量表</h3>
+                    <p class="text-sm text-slate-600 leading-relaxed">
+                        投資活動現金流因佈局 EUV 高端技術與新廠興建而持續大額流出，但當前營業淨現金流極端強勁，足以完全支撐擴充計畫，不致帶來流動性風險。
+                    </p>
                 </div>
             </div>
         </section>
 
         <!-- 財報數據圖表 -->
-        <section class="bg-white rounded-xl shadow-sm p-8 mb-8 border border-gray-100">
-            <h2 class="text-2xl font-bold text-blue-800 mb-6 border-b pb-2">近四季財務比率比較</h2>
+        <section class="bg-white rounded-2xl shadow-sm p-8 md:p-10 border border-slate-100 transition-all hover:shadow-md">
+            <div class="flex items-center space-x-3 mb-6">
+                <div class="w-2 h-8 bg-blue-700 rounded-full"></div>
+                <h2 class="text-2xl font-bold text-slate-900">近四季財務比率比較</h2>
+            </div>
             
-            <div class="overflow-x-auto mb-8">
+            <div class="overflow-x-auto mb-8 border border-slate-100 rounded-xl shadow-sm">
                 <table class="w-full text-left border-collapse">
                     <thead>
-                        <tr class="bg-gray-100 text-gray-700">
-                            <th class="p-4 rounded-tl-lg font-semibold">季度</th>
+                        <tr class="bg-slate-50 text-slate-700 border-b border-slate-100 text-sm">
+                            <th class="p-4 font-semibold">季度</th>
                             <th class="p-4 font-semibold">毛利率</th>
                             <th class="p-4 font-semibold">營業利益率</th>
-                            <th class="p-4 rounded-tr-lg font-semibold">稅後淨利率</th>
+                            <th class="p-4 font-semibold">稅後淨利率</th>
                         </tr>
                     </thead>
-                    <tbody class="text-gray-600">
-                        <tr class="border-b">
-                            <td class="p-4 font-bold text-gray-800">2026 Q1</td>
-                            <td class="p-4 text-green-600 font-bold">67.89%</td>
-                            <td class="p-4">61.34%</td>
-                            <td class="p-4">53.09%</td>
+                    <tbody class="text-slate-600 text-sm divide-y divide-slate-100">
+                        <tr class="hover:bg-slate-50/80 transition-colors">
+                            <td class="p-4 font-bold text-slate-900">2026 Q1</td>
+                            <td class="p-4 text-emerald-600 font-bold">67.89%</td>
+                            <td class="p-4 text-slate-900 font-medium">61.34%</td>
+                            <td class="p-4 text-slate-900 font-medium">53.09%</td>
                         </tr>
-                        <tr class="border-b">
-                            <td class="p-4 font-bold">2025 Q4</td>
+                        <tr class="hover:bg-slate-50/80 transition-colors">
+                            <td class="p-4 font-medium text-slate-900">2025 Q4</td>
                             <td class="p-4">49.05%</td>
                             <td class="p-4">39.15%</td>
                             <td class="p-4">36.86%</td>
                         </tr>
-                        <tr class="border-b">
-                            <td class="p-4 font-bold">2025 Q3</td>
+                        <tr class="hover:bg-slate-50/80 transition-colors">
+                            <td class="p-4 font-medium text-slate-900">2025 Q3</td>
                             <td class="p-4">18.45%</td>
                             <td class="p-4">5.96%</td>
                             <td class="p-4">8.32%</td>
                         </tr>
-                        <tr>
-                            <td class="p-4 font-bold">2025 Q2</td>
-                            <td class="p-4 text-red-500">-20.56%</td>
+                        <tr class="hover:bg-slate-50/80 transition-colors bg-red-50/20">
+                            <td class="p-4 font-medium text-slate-900">2025 Q2</td>
+                            <td class="p-4 text-red-500 font-semibold">-20.56%</td>
                             <td class="p-4 text-red-500">-42.76%</td>
                             <td class="p-4 text-red-500">-38.97%</td>
                         </tr>
@@ -93,15 +158,16 @@
             </div>
 
             <!-- 圖表畫布 -->
-            <div class="relative h-96 w-full">
+            <div class="relative h-96 w-full bg-slate-50 p-4 rounded-xl border border-slate-100">
                 <canvas id="marginChart"></canvas>
             </div>
         </section>
 
     </main>
 
-    <footer class="text-center py-6 text-gray-500 text-sm">
-        <p>資料來源：南亞科技財報公布資訊 | 網頁使用 Chart.js & Tailwind CSS 建置</p>
+    <footer class="text-center py-10 text-slate-400 text-xs border-t border-slate-100 bg-white mt-12">
+        <p class="mb-2">資料來源：南亞科技財報公布資訊 | 網頁使用 Chart.js & Tailwind CSS 建置</p>
+        <p>&copy; 2026 南亞科財報與營運深度分析網頁. All Rights Reserved.</p>
     </footer>
 
     <!-- Chart.js 繪圖邏輯 -->
@@ -115,21 +181,23 @@
                     {
                         label: '毛利率 (%)',
                         data: [-20.56, 18.45, 49.05, 67.89],
-                        borderColor: 'rgba(34, 197, 94, 1)', // 綠色
-                        backgroundColor: 'rgba(34, 197, 94, 0.1)',
+                        borderColor: 'rgba(16, 185, 129, 1)', // Emerald-500
+                        backgroundColor: 'rgba(16, 185, 129, 0.08)',
                         borderWidth: 3,
-                        pointRadius: 6,
-                        tension: 0.3,
+                        pointRadius: 5,
+                        pointHoverRadius: 7,
+                        tension: 0.25,
                         fill: true
                     },
                     {
                         label: '淨利率 (%)',
                         data: [-38.97, 8.32, 36.86, 53.09],
-                        borderColor: 'rgba(59, 130, 246, 1)', // 藍色
-                        backgroundColor: 'rgba(59, 130, 246, 0.1)',
+                        borderColor: 'rgba(59, 130, 246, 1)', // Blue-500
+                        backgroundColor: 'rgba(59, 130, 246, 0.08)',
                         borderWidth: 3,
-                        pointRadius: 6,
-                        tension: 0.3,
+                        pointRadius: 5,
+                        pointHoverRadius: 7,
+                        tension: 0.25,
                         fill: true
                     }
                 ]
@@ -140,25 +208,34 @@
                 plugins: {
                     legend: {
                         position: 'top',
-                        labels: { font: { size: 14 } }
+                        labels: { 
+                            boxWidth: 12,
+                            font: { size: 13, weight: '500' },
+                            color: '#334155'
+                        }
                     },
                     tooltip: {
                         mode: 'index',
                         intersect: false,
+                        padding: 12,
+                        cornerRadius: 8,
+                        backgroundColor: 'rgba(15, 23, 42, 0.9)',
                         callbacks: {
                             label: function(context) {
-                                return context.dataset.label + ': ' + context.parsed.y + '%';
+                                return ' ' + context.dataset.label + ': ' + context.parsed.y + '%';
                             }
                         }
                     }
                 },
                 scales: {
                     y: {
-                        title: { display: true, text: '百分比 (%)' },
-                        grid: { color: '#e5e7eb' }
+                        title: { display: true, text: '百分比 (%)', color: '#64748b' },
+                        grid: { color: '#f1f5f9' },
+                        ticks: { color: '#64748b' }
                     },
                     x: {
-                        grid: { display: false }
+                        grid: { display: false },
+                        ticks: { color: '#64748b' }
                     }
                 }
             }
